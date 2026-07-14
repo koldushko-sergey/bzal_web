@@ -7,3 +7,149 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer components {
+    .prose {
+        @apply text-gray-700 leading-relaxed;
+    }
+    .prose h2 {
+        @apply text-xl font-bold text-[#0b1325] mt-8 mb-4;
+    }
+    .prose h3 {
+        @apply text-lg font-bold text-[#0b1325] mt-6 mb-3;
+    }
+    .prose p {
+        @apply mb-4;
+    }
+    .prose ul {
+        @apply list-disc pl-6 mb-4 space-y-1;
+    }
+    .prose a {
+        @apply text-[#e31e24] hover:underline;
+    }
+
+    /* Навигация */
+    .nav-link {
+        @apply block py-3.5 px-2 hover:text-white transition;
+    }
+
+    .nav-link-active {
+        @apply text-white;
+    }
+
+    .nav-dropdown {
+        @apply relative;
+    }
+
+    .nav-dropdown-trigger {
+        @apply flex items-center gap-1 py-3.5 px-2 hover:text-white transition cursor-pointer;
+    }
+
+    .nav-chevron {
+        @apply w-3.5 h-3.5 transition-transform duration-200;
+    }
+
+    .nav-dropdown-menu {
+        @apply hidden lg:absolute lg:left-0 lg:top-full lg:pt-1 lg:z-50
+               lg:group-hover:block lg:group-focus-within:block
+               w-full lg:w-64 bg-[#162542] lg:border lg:border-gray-700 lg:shadow-xl
+               py-1 lg:py-2 text-xs normal-case text-gray-200 font-medium lg:rounded-b;
+    }
+
+    .nav-dropdown.is-open .nav-dropdown-menu {
+        @apply block;
+    }
+
+    .nav-dropdown.is-open .nav-chevron,
+    .group:hover .nav-chevron,
+    .group:focus-within .nav-chevron {
+        @apply rotate-180;
+    }
+
+    .nav-dropdown-link {
+        @apply block px-4 py-2 hover:bg-[#1e3259] hover:text-white transition;
+    }
+
+    .nav-dropdown-link-active {
+        @apply bg-[#1e3259] text-white;
+    }
+
+    #main-nav.hidden {
+        @apply hidden;
+    }
+
+    @media (max-width: 1023px) {
+        #main-nav:not(.hidden) {
+            @apply block border-t border-gray-800/60;
+        }
+
+        #main-nav:not(.hidden) ul {
+            @apply flex-col items-stretch gap-0 py-2;
+        }
+
+        #main-nav:not(.hidden) .nav-link,
+        #main-nav:not(.hidden) .nav-dropdown-trigger {
+            @apply w-full justify-between px-4;
+        }
+
+        #main-nav:not(.hidden) .nav-dropdown-menu {
+            @apply static bg-[#0b1325] border-t border-gray-800/40 shadow-none pl-2;
+        }
+    }
+}
+
+/* Версия для слабовидящих */
+html.a11y-mode {
+    font-size: 118%;
+}
+
+body.a11y-mode {
+    @apply bg-white text-black;
+}
+
+body.a11y-mode .bg-\[\#0b1325\],
+body.a11y-mode .bg-\[\#101b30\],
+body.a11y-mode .bg-\[\#162542\],
+body.a11y-mode .bg-gray-50,
+body.a11y-mode .bg-gray-100 {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+body.a11y-mode .text-white,
+body.a11y-mode .text-gray-300,
+body.a11y-mode .text-gray-400,
+body.a11y-mode .text-gray-500,
+body.a11y-mode .text-gray-600 {
+    color: #000 !important;
+}
+
+body.a11y-mode a {
+    text-decoration: underline !important;
+    color: #0000ee !important;
+}
+
+body.a11y-mode img {
+    filter: none !important;
+}
+
+body.a11y-mode * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body.a11y-mode button,
+body.a11y-mode .bg-\[\#e31e24\] {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+}
+
+/* Trix editor */
+trix-editor {
+    min-height: 200px;
+}
+
+trix-toolbar .trix-button-group {
+    margin-bottom: 0;
+}
