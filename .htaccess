@@ -13,6 +13,12 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
+    # Vite assets: /build/* → /public/build/*
+    RewriteRule ^build/(.*)$ public/build/$1 [L]
+
+    # Uploaded files: /storage/* → /public/storage/*
+    RewriteRule ^storage/(.*)$ public/storage/$1 [L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
