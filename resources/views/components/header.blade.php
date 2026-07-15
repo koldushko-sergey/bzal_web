@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 flex items-center justify-between">
             <div class="flex items-center space-x-4 md:space-x-8">
                 <a href="{{ route('home') }}" class="flex items-center space-x-3 group shrink-0">
-                    <svg width="90" height="28" viewBox="0 0 90 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="180" height="65" viewBox="0 0 90 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.9052 26.9834C17.8509 26.9935 17.7965 27.0021 17.7422 27.0079C17.798 27.0021 17.8523 26.9935 17.9052 26.9834Z" fill="white"/>
                         <path d="M18.0822 26.9404C18.0321 26.9547 17.9806 26.9677 17.9277 26.9777C17.9806 26.9677 18.0307 26.9547 18.0822 26.9404Z" fill="white"/>
                         <path d="M0 6.30536C0 5.88089 0.14893 5.48665 0.373758 5.1629C0.138906 5.48377 0 5.87801 0 6.30536Z" fill="white"/>
@@ -21,14 +21,14 @@
                 </a>
 
                 <div class="hidden md:block border-l border-gray-600 pl-6 leading-tight">
-                    <p class="text-[11px] text-gray-400 font-medium uppercase tracking-wider">{{ $siteSlogan1 }}</p>
-                    <p class="text-[11px] text-white font-bold uppercase tracking-wider">{{ $siteSlogan2 }}</p>
+                    <p class="text-[18px] text-white font-medium uppercase tracking-wider">{{ $siteSlogan1 }}</p>
+                    <p class="text-[12px] text-gray-400 font-bold uppercase tracking-wider">{{ $siteSlogan2 }}</p>
                 </div>
             </div>
 
             <div class="flex items-center space-x-3 sm:space-x-6">
                 <div class="hidden sm:flex items-center space-x-3 text-sm">
-                    <span class="text-gray-400 font-medium uppercase tracking-wider text-[11px]">Контакты</span>
+                    <span class="text-gray-400 font-medium uppercase tracking-wider text-[14px]">Контакты</span>
                     <a href="tel:{{ preg_replace('/[^\d+]/', '', $sitePhone) }}" class="text-white font-extrabold text-base tracking-wide hover:text-red-500 transition">
                         {{ $sitePhone }}
                     </a>
@@ -58,31 +58,31 @@
 
         <nav id="main-nav" class="bg-[#101b30] border-t border-gray-800/60 hidden lg:block">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <ul class="flex items-center flex-wrap gap-x-1 text-[12px] font-semibold uppercase tracking-wider text-gray-300">
+                <ul class="flex items-center flex-wrap gap-x-1 text-[13px] font-semibold uppercase tracking-wider text-gray-300">
                     <li>
-                        <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'nav-link-active' : '' }}">Главная</a>
+                        <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'nav-link-active' : '' }}">ГЛАВНАЯ</a>
                     </li>
 
                     <li class="nav-dropdown group" data-nav-dropdown>
                         <button type="button" class="nav-dropdown-trigger {{ request()->routeIs('about.*') ? 'nav-link-active' : '' }}" aria-expanded="false">
-                            <span>О предприятии</span>
+                            <span>О ПРЕДПРИЯТИИ</span>
                             <svg class="nav-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <ul class="nav-dropdown-menu">
                             <li><a href="{{ route('about.company') }}" class="nav-dropdown-link {{ request()->routeIs('about.company') ? 'nav-dropdown-link-active' : '' }}">ОАО «БЗАЛ»</a></li>
-                            <li><a href="{{ route('about.history') }}" class="nav-dropdown-link {{ request()->routeIs('about.history') ? 'nav-dropdown-link-active' : '' }}">История</a></li>
-                            <li><a href="{{ route('about.team') }}" class="nav-dropdown-link {{ request()->routeIs('about.team') ? 'nav-dropdown-link-active' : '' }}">Наша команда</a></li>
-                            <li><a href="{{ route('about.corporate') }}" class="nav-dropdown-link {{ request()->routeIs('about.corporate') ? 'nav-dropdown-link-active' : '' }}">Корпоративная информация</a></li>
+                            <li><a href="{{ route('about.history') }}" class="nav-dropdown-link {{ request()->routeIs('about.history') ? 'nav-dropdown-link-active' : '' }}">ИСТОРИЯ</a></li>
+                            <li><a href="{{ route('about.team') }}" class="nav-dropdown-link {{ request()->routeIs('about.team') ? 'nav-dropdown-link-active' : '' }}">НАША КОМАНДА</a></li>
+                            <li><a href="{{ route('about.corporate') }}" class="nav-dropdown-link {{ request()->routeIs('about.corporate') ? 'nav-dropdown-link-active' : '' }}">КОРПОРАТИВНАЯ ИНФОРМАЦИЯ</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-dropdown group" data-nav-dropdown>
                         <button type="button" class="nav-dropdown-trigger {{ request()->routeIs('products.*') ? 'nav-link-active' : '' }}" aria-expanded="false">
-                            <span>Продукция</span>
+                            <span>ПРОДУКЦИЯ</span>
                             <svg class="nav-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="{{ route('products.index') }}" class="nav-dropdown-link {{ request()->routeIs('products.index') ? 'nav-dropdown-link-active' : '' }}">Вся продукция</a></li>
+                            <li><a href="{{ route('products.index') }}" class="nav-dropdown-link {{ request()->routeIs('products.index') ? 'nav-dropdown-link-active' : '' }}">ВСЯ ПРОДУКЦИЯ</a></li>
                             @foreach($navCategories as $category)
                                 <li><a href="{{ route('products.category', $category->slug) }}" class="nav-dropdown-link {{ (request()->routeIs('products.category') && request()->route('slug') === $category->slug) || (request()->routeIs('products.show') && request()->route('categorySlug') === $category->slug) ? 'nav-dropdown-link-active' : '' }}">{{ $category->name }}</a></li>
                             @endforeach
@@ -90,39 +90,39 @@
                     </li>
 
                     <li>
-                        <a href="{{ route('news.index') }}" class="nav-link {{ request()->routeIs('news.*') ? 'nav-link-active' : '' }}">Новости</a>
+                        <a href="{{ route('news.index') }}" class="nav-link {{ request()->routeIs('news.*') ? 'nav-link-active' : '' }}">НОВОСТИ</a>
                     </li>
 
                     <li>
-                        <a href="{{ route('liquidation.index') }}" class="nav-link {{ request()->routeIs('liquidation.*') ? 'nav-link-active' : '' }}">Реализация неликвидов</a>
+                        <a href="{{ route('liquidation.index') }}" class="nav-link {{ request()->routeIs('liquidation.*') ? 'nav-link-active' : '' }}">РЕАЛИЗАЦИЯ НЕЛЕКВИДОВ</a>
                     </li>
 
                     <li class="nav-dropdown group" data-nav-dropdown>
                         <button type="button" class="nav-dropdown-trigger {{ request()->routeIs('appeals.*') ? 'nav-link-active' : '' }}" aria-expanded="false">
-                            <span>Электронные обращения</span>
+                            <span>ЭЛЕКТРОННЫЕ ОБРАЩЕНИЯ</span>
                             <svg class="nav-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="{{ route('appeals.citizens') }}" class="nav-dropdown-link {{ request()->routeIs('appeals.citizens*') ? 'nav-dropdown-link-active' : '' }}">Для граждан</a></li>
-                            <li><a href="{{ route('appeals.business') }}" class="nav-dropdown-link {{ request()->routeIs('appeals.business*') ? 'nav-dropdown-link-active' : '' }}">Для юридических лиц и ИП</a></li>
+                            <li><a href="{{ route('appeals.citizens') }}" class="nav-dropdown-link {{ request()->routeIs('appeals.citizens*') ? 'nav-dropdown-link-active' : '' }}">ДЛЯ ГРАЖДАН</a></li>
+                            <li><a href="{{ route('appeals.business') }}" class="nav-dropdown-link {{ request()->routeIs('appeals.business*') ? 'nav-dropdown-link-active' : '' }}">ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ И ИП</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-dropdown group" data-nav-dropdown>
                         <button type="button" class="nav-dropdown-trigger {{ request()->routeIs('information.*') ? 'nav-link-active' : '' }}" aria-expanded="false">
-                            <span>Информация</span>
+                            <span>ИНФОРМАЦИЯ</span>
                             <svg class="nav-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="{{ route('information.corruption') }}" class="nav-dropdown-link {{ request()->routeIs('information.corruption') ? 'nav-dropdown-link-active' : '' }}">Борьба с коррупцией</a></li>
-                            <li><a href="{{ route('information.extremism') }}" class="nav-dropdown-link {{ request()->routeIs('information.extremism') ? 'nav-dropdown-link-active' : '' }}">Противодействие экстремизму</a></li>
+                            <li><a href="{{ route('information.corruption') }}" class="nav-dropdown-link {{ request()->routeIs('information.corruption') ? 'nav-dropdown-link-active' : '' }}">БОРЬБА С КОРРУПЦИЕЙ</a></li>
+                            <li><a href="{{ route('information.extremism') }}" class="nav-dropdown-link {{ request()->routeIs('information.extremism') ? 'nav-dropdown-link-active' : '' }}">ПРОТИВОДЕЙСТВИЕ ЭКСТРЕМИЗМУ</a></li>
                             <li><a href="{{ route('information.mchs') }}" class="nav-dropdown-link {{ request()->routeIs('information.mchs') ? 'nav-dropdown-link-active' : '' }}">МЧС</a></li>
-                            <li><a href="{{ route('information.documents') }}" class="nav-dropdown-link {{ request()->routeIs('information.documents') ? 'nav-dropdown-link-active' : '' }}">Документы</a></li>
+                            <li><a href="{{ route('information.documents') }}" class="nav-dropdown-link {{ request()->routeIs('information.documents') ? 'nav-dropdown-link-active' : '' }}">ДОКУМЕНТЫ</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="{{ route('contacts.index') }}" class="nav-link {{ request()->routeIs('contacts.*') ? 'nav-link-active' : '' }}">Контакты</a>
+                        <a href="{{ route('contacts.index') }}" class="nav-link {{ request()->routeIs('contacts.*') ? 'nav-link-active' : '' }}">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </div>

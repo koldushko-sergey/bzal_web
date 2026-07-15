@@ -4,7 +4,7 @@
 
 @section('content')
 <section class="relative bg-[#0b1325] text-white overflow-hidden">
-    <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    <div class="absolute inset-0 opacity-20 bg-[url('https://kts-bzal.by/storage/blocks/images/01KR1BYVMHKAR51PHK7Y9GKZ05.jpg')]"></div>
     <div class="absolute right-0 top-0 bottom-0 w-1/3 hidden lg:block bg-gradient-to-l from-[#e31e24]/10 to-transparent"></div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
         <p class="text-[#e31e24] font-bold uppercase tracking-widest text-xs mb-4">ОАО «БЗАЛ» · с 1974 года</p>
@@ -42,7 +42,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325] mb-4">О предприятии</h2>
+                <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325] mb-4">О ПРЕДПРИЯТИИ</h2>
                 <p class="text-gray-600 leading-relaxed">{{ $aboutTeaser }}</p>
                 <div class="mt-6 flex flex-wrap gap-3">
                     <a href="{{ route('about.company') }}" class="text-[#e31e24] text-sm font-semibold uppercase tracking-wider hover:underline">Подробнее о заводе →</a>
@@ -56,15 +56,15 @@
                 </a>
                 <a href="{{ route('about.team') }}" class="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-md transition">
                     <p class="text-2xl font-black text-[#e31e24] mb-2">02</p>
-                    <p class="text-sm font-bold uppercase tracking-wide text-[#0b1325]">Команда</p>
+                    <p class="text-sm font-bold uppercase tracking-wide text-[#0b1325]">КОМАНДА</p>
                 </a>
                 <a href="{{ route('products.index') }}" class="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-md transition">
                     <p class="text-2xl font-black text-[#e31e24] mb-2">03</p>
-                    <p class="text-sm font-bold uppercase tracking-wide text-[#0b1325]">Продукция</p>
+                    <p class="text-sm font-bold uppercase tracking-wide text-[#0b1325]">ПРОДУКЦИЯ</p>
                 </a>
                 <a href="{{ route('about.corporate') }}" class="bg-[#e31e24] text-white p-6 rounded-lg hover:bg-[#c21419] transition">
                     <p class="text-2xl font-black mb-2">04</p>
-                    <p class="text-sm font-bold uppercase tracking-wide">Корпоративная информация</p>
+                    <p class="text-sm font-bold uppercase tracking-wide">КОРПОРАТИВНАЯ ИНФОРМАЦИЯ</p>
                 </a>
             </div>
         </div>
@@ -74,7 +74,7 @@
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between mb-8">
-            <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325]">Продукция</h2>
+            <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325]">ПРОДУКЦИЯ</h2>
             <a href="{{ route('products.index') }}" class="text-[#e31e24] text-sm font-semibold uppercase tracking-wider hover:underline">Весь каталог</a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -103,7 +103,7 @@
 <section class="py-16 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between mb-8">
-            <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325]">Новости</h2>
+            <h2 class="text-xl font-black uppercase tracking-wide text-[#0b1325]">НОВОСТИ</h2>
             <a href="{{ route('news.index') }}" class="text-[#e31e24] text-sm font-semibold uppercase tracking-wider hover:underline">Все новости</a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -131,7 +131,7 @@
             @endforeach
         </div>
     </div>
-</section>
+</section> 
 @endif
 
 <section class="py-16 bg-[#0b1325] text-white">
