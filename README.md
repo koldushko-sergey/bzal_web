@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-Современный корпоративный сайт ОАО *«Барановичский завод автоматических линий»*, разработанный на Laravel.
+Современный корпоративный сайт ОАО *«Барановичский завод автоматических линий»*, разработанный на Laravel.<br>
 Проект представляет собой информационный веб-сайт предприятия с системой управления контентом, позволяющей публиковать новости, управлять каталогом продукции и редактировать основные страницы сайта.
 
 # Основные возможности
@@ -24,22 +24,7 @@ Frontend: Blade, Bootstrap, HTML, CSS3, JavaScript
 Database: MySQL
 
 # Архитектура
-
 Проект построен согласно архитектуре Laravel:
-app/
- ├── Http/
- ├── Models/
- ├── Providers/
-database/
- ├── migrations/
- ├── seeders/
-resources/
- ├── views/
- ├── css/
- ├── js/
-routes/
-storage/
-public/
 
 Используются:
 - MVC
